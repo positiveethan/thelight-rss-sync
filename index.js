@@ -8,7 +8,7 @@ const WP_API_URL = process.env.WP_API_URL;
 const WP_USERNAME = process.env.WP_USERNAME;
 const WP_PASSWORD = process.env.WP_PASSWORD;
 
-const MAX_AGE_DAYS = 7;
+const MAX_AGE_DAYS = 1;
 
 // Step 1: Add multiple feed/category mappings here
 const FEED_CONFIGS = [
@@ -58,7 +58,7 @@ async function uploadImageToWordPress(imageUrl, auth) {
   try {
     const imageRes = await fetch(imageUrl);
     if (!imageRes.ok) throw new Error(`Failed to fetch image: ${imageUrl}`);
-    const imageBuffer = await imageRes.buffer();
+    const imageBuffer = await imageRes.arrayBuffer();
     const fileName = imageUrl.split('/').pop().split('?')[0];
 
     const uploadRes = await fetch(`${WP_API_URL}/wp/v2/media`, {
