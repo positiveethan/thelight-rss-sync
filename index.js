@@ -29,6 +29,7 @@ const FEED_CONFIGS = [
     url: 'https://www.omnycontent.com/d/playlist/78fc2cc4-b65c-4b13-a57e-af7000e01efa/820b1f9f-131f-481f-93a2-b1e700171b59/8c42df28-9190-4bd7-bad7-b1e7001890b0/podcast.rss',
     categoryId: 19,
     featuredMediaId: 2883,
+    useSourceMedia: true,
   },
   {
     // Well Hello Anxiety
