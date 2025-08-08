@@ -16,7 +16,7 @@ const FEED_CONFIGS = [
     // Everyday Joy
     url: 'https://www.omnycontent.com/d/playlist/78fc2cc4-b65c-4b13-a57e-af7000e01efa/a573cd11-3e6d-4669-a142-af930169f945/f787098c-4a00-4ad2-a3f9-af93016b2fb1/podcast.rss',
     categoryId: 18,
-    featuredMediaId: 858,
+    featuredMediaId: 6316,
   },
   {
     // Father Figures
