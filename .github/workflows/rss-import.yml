@@ -1,8 +1,8 @@
-name: Weekly RSS Import
+name: Daily RSS Import
 
 on:
   schedule:
-    - cron: '0 22 * * 0' # every Sunday at 8am Melbourne time (22:00 UTC)
+    - cron: '0 22 * * *' # every day at 8am Melbourne time (22:00 UTC)
   workflow_dispatch: # allows manual trigger
 
 jobs:
